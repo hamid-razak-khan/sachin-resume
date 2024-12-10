@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - My Website</title>
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f8fc;
+            color: #333;
+        }
+
+        /* Header Styling */
+        header {
+            background: linear-gradient(70deg, #a600ff, #05275e);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Typing Animation for h1 */
+        h1 {
+            font-size: 2.5rem;
+            color: #1f130d;
+            margin-bottom: 10px;
+            border-right: 4px solid #a600ff; /* Cursor effect */
+            padding-right: 10px;
+            width: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 4s steps(30) 1s forwards, blink 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px 0;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffdd57;
+        }
+
+        /* Main Content Styling */
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h2 {
+            color: #0056b3;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            margin: 20px 10px;
+            padding: 12px 25px;
+            background: #894179;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        /* Image Styling */
+        img {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 15px;
+            margin: 20px auto;
+            box-shadow: 0px 4px 10px rgba(107, 45, 109, 0.2);
+        }
+
+        /* Footer Styling */
+        footer {
+            background: #ad4c92;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        footer .contact {
+            margin: 10px 0;
+        }
+
+        footer .social-icons {
+            margin-top: 10px;
+        }
+
+        footer .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer .social-icons a:hover {
+            color: #007bff;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <h2>Hello!</h2>
+        <p>
+            Welcome to my personal website. Explore my professional background, learn about my hobbies, 
+            and feel free to reach out through the contact page.
+        </p>
+        <img src="profile_bio.jpg" alt="A welcoming illustration">
+        <div class="container">
+            <a href="Resume.html" class="btn">View Resume</a>
+            <a href="biodata.html" class="btn">View Bio-data</a>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p class="contact">
+            📞 Phone: +91 1234567890 | 📧 Email: yourname@example.com
+        </p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/yourusername" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/yourusername" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/yourusername" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+        </div>
+        <p>
+            © 2024 Sachin. All rights reserved.
+        </p>
+    </footer>
+</body>
+</html>
